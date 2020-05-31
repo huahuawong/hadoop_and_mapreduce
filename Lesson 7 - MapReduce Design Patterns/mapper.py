@@ -13,5 +13,7 @@ for line in reader:
 	
 	words = body.strip().split()
 	for word in words:
+		# Recall that it has to be case insensitive, thus what we can do is convert the input to either lwoer or upper case
+		# is.upper would work as well
         	if 'fantastic' in word.lower():
             		print "{0}\t{1}".format(word.lower(), id)
